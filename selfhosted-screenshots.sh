@@ -30,7 +30,7 @@ import /tmp/$FILE
 URL="$BASE_URL/$FILE"
 if [ "$OPEN_URL" = true ]; then
     {
-        _xdg-open "$URL" > /dev/null 2>&1
+        xdg-open "$URL" > /dev/null 2>&1
     } || {
         echo "Unable to open browser. Screenshot uploaded to:"
         echo "$URL"
