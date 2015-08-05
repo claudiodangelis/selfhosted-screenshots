@@ -47,7 +47,7 @@ if [ "$COPY_URL_TO_CLIPBOARD" = true ]; then
     }
 fi
 if [ "$NOTIFY" = true ]; then
-    [[ "$COPIED" = true ]] && STR="not" || STR=""
+    [[ "$COPIED" = true ]] && STR="" || STR="not"
     NOTIFICATION="URL ${STR} copied"
     {
         notify-send "$NOTIFICATION"
